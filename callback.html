@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Authorization - Hezzi Bot Signal Auto Poster</title>
+</head>
+<body style="font-family:Arial;max-width:700px;margin:20px auto;padding:10px">
+<h1>Authorization Complete</h1>
+<p>You have authorized Hezzi Bot Signal Auto Poster to upload videos to your TikTok drafts. You can close this page.</p>
+<p id="info"></p>
+<script>
+var p = new URLSearchParams(window.location.search);
+var code = p.get("code");
+if (code) {
+  document.getElementById("info").innerText = "Authorization code: " + code;
+}
+</script>
+</body>
+</html>
